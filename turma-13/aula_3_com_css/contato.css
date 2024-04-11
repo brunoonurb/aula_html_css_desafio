@@ -1,0 +1,94 @@
+/* Estilo para o formulário */
+.formContato {
+  width: 50%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+/* h4{
+  color: red;
+  font-size: 20px;
+} */
+.meuForm{
+  width: 70vw;
+  border: 1px solid blue;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: beige;
+}
+
+.meuForm h4 {
+  color: red;
+  font-size: 20px;
+}
+
+/* Estilo para o título do formulário */
+.formContato h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilo para os campos de entrada */
+.meuInput {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para o rótulo dos campos de entrada */
+form label {
+  font-weight: bold;
+}
+
+/* Estilo para os botões */
+form button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para o botão de envio */
+form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Estilo para o botão de reset */
+form button[type="reset"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Estilo para o título das seções do formulário */
+form h2 {
+  color: #333;
+}
+
+/* Estilo para o campo de seleção */
+form select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para a lista de opções de seleção */
+form datalist {
+  display: none; /* Esconde a lista de opções até ser ativada */
+}
+
+/* Estilo para o grupo de checkboxes */
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilo para a linha divisória */
+form hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}

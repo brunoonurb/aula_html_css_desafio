@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contato</title>
+    <link rel="stylesheet" href="meuCss.css" />
+  </head>
+  <body>
+    <div class="cabecalho">
+      <a href="index.html"> home </a> | <a href="produtos.html"> produtos </a> |
+      <a href="carrinho.html"> carrinho </a>|
+      <a href="contato.html"> contato </a>
+    </div>
+    <div class="formContato">
+      <h1>Formulario</h1>
+
+      <form>
+        <input
+          type="text"
+          placeholder="Digite seu nome"
+          id="nome"
+          name="nome"
+          required
+        />
+        <br />
+        <!-- <label for="sobrenome">Sobrenome</label> -->
+        <input
+          type="text"
+          placeholder="digite seu sobrenome"
+          id="sobrenome"
+          name="sobrenome"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="digite sua senha"
+          id="senha"
+          name="senha"
+        />
+        <br />
+        <input
+          type="number"
+          placeholder="digite sua idade"
+          id="idade"
+          name="idade"
+        />
+
+        <h3>Qual Sexo</h3>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="masculino" />
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="sexo" id="feminino" />
+        <label for="outros">Outros</label>
+        <input type="radio" name="sexo" id="outros" />
+
+        <h3>Comidas favoritas</h3>
+        <label for="caseira">Caseira</label
+        ><input type="checkbox" name="comida" id="caseira" />
+        <label for="caseira">Japonesa</label
+        ><input type="checkbox" name="comida" id="japonesa" />
+        <label for="caseira">Arabe</label
+        ><input type="checkbox" name="comida" id="arabe" />
+
+        <br />
+        <br />
+        <select name="uf" id="uf">
+          <option value="">Selecione</option>
+          <option value="PR">Parana</option>
+          <option value="SC">Santa catarinha</option>
+          <option value="RS">Rio Grande do Sul</option>
+        </select>
+
+        <br />
+        <br />
+        <input type="file" id="arquivo" name="arquivo" />
+
+        <br />
+        <br />
+        <input list="Paises" />
+        <datalist id="Paises">
+          <option value="brasil">Brasil</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Peru">Peru</option>
+        </datalist>
+
+        <br />
+        <br />
+        <button type="submit">salvar</button>
+        <button class="reset" type="reset">resetar</button>
+      </form>
+    </div>
+  </body>
+</html>

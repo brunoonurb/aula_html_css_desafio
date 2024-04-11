@@ -1,0 +1,27 @@
+
+margin: 100px;
+background-color: orange;
+width: 500px;
+height: 400px;
+border-radius: 20px;
+text-align: center;
+font-size: 30px;
+  
+/* FLEX EXEMPLO 1 */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+/* FLEX EXEMPLO 2 */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+/* FLEX EXEMPLO  */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+

@@ -1,0 +1,35 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.produto {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  margin-top: 10px;
+}
+
+.produto p {
+  margin: 10px 0;
+}
+
+.produto span {
+  font-weight: bold;
+  color: #007bff;
+}

@@ -1,0 +1,23 @@
+.header {
+  background-color: blueviolet;
+  height: 50px;
+}
+
+.nav {
+  background-color: red;
+  height: 50px;
+}
+
+.main {
+  background-color: blue;
+  height: 400px;
+}
+
+.footer {
+  background-color: black;
+  overflow: auto;
+  color: beige;
+  height: 50px;
+}
+
+

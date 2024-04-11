@@ -1,0 +1,97 @@
+.divPrincipal {
+  width: 90vw;
+  height: 90vh;
+  border: solid 3px black;
+  margin: 2.5vh;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header {
+  width: 95%;
+  height: 7%;
+  border: solid 2px black;
+  padding: 8px;
+}
+
+.nav {
+  width: 95%;
+  height: 7%;
+  border: solid 2px black;
+  padding: 8px;
+}
+
+.main {
+  width: 95%;
+  height: 60%;
+  border: solid 2px black;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 95%;
+  height: 7%;
+  border: solid 2px black;
+  padding: 8px;
+}
+.centralizarTextoeSlide {
+  display: flex;
+  width: 100%;
+  height: 26%;
+  display: flex;
+}
+.photoSlideShow {
+  width: 70%;
+  height: 75%;
+  border: solid 2px black;
+  padding: 8px;
+  margin-left: 9%;
+  margin-top: 10px;
+}
+.services {
+  width: 90%;
+  height: 63%;
+  border: solid 2px black;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.divCentralServices {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.overviewodservices {
+  width: 90%;
+  height: 20%;
+  border: solid 2px black;
+  /* padding: 8px; */
+}
+.overviewodservices div {
+  margin: 8px;
+}
+
+.divCardServices {
+  width: 90%;
+  height: 65%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cardService {
+  width: 27%;
+  height: 75%;
+  border: solid 2px black;
+  padding: 8px;
+}

@@ -1,0 +1,10 @@
+principais TAGS
+
+#LINK
+<a href="index.html">
+
+#IMAGEM
+<img src="imagem/imagem2.jpg" alt="imagem 2" width="300" height="250" />
+
+#INPUT
+<input type="text" id="nome"   maxlength="20"   placeholder="Coloque seu nome" required />

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contato</title>
+    <link rel="stylesheet" href="meuCss.css" />
+  </head>
+  <body>
+    <div class="cabecalho">
+      <a href="index.html"> home </a> | <a href="produtos.html"> produtos </a> |
+      <a href="carrinho.html"> carrinho </a>|
+      <a href="contato.html"> contato </a>
+    </div>
+    <div class="formContato">
+      <h1>Formulario</h1>
+
+      <form>
+        <h2>Pessoal</h2>
+        <label for="nome">Nome</label>
+        <br />
+        <input
+          type="text"
+          id="nome"
+          maxlength="20"
+          placeholder="Coloque seu nome"
+          required
+          title="Nome obrigatorio"
+        />
+
+        <br />
+        <label for="sobrenome">sobrenome</label>
+        <br />
+        <input
+          type="text"
+          id="sobrenome"
+          maxlength="20"
+          placeholder="Coloque seu sobrenome"
+          required
+        />
+
+        <br />
+        <label for="idade">idade</label>
+        <br />
+        <input
+          type="number"
+          id="idade"
+          placeholder="Coloque seu idade"
+          required
+        />
+
+        <br />
+        <label for="idade">SEXO</label>
+        <br />
+        Masculino
+        <input type="radio" name="sexo" value="masculino" required /> Feminino
+        <input type="radio" name="sexo" value="Feminino" required />
+        <br />
+
+        <input
+          type="text"
+          id="sobrenome"
+          placeholder="Digite uma senha"
+          required
+        />
+        <hr />
+        <h2>Localidade</h2>
+        <label for="idade">Estado</label>
+        <br />
+        <select name="estado" id="estado">
+          <option value="">selecione</option>
+          <option value="Parana">Parana</option>
+          <option value="Santa catarina">Santa catarina</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="piaui">Piaui</option>
+          <option value="Paraiba">Paraiba</option>
+          <option value="São Paulo">São Paulo</option>
+        </select>
+
+        <br />
+        <label for="pais">Pais</label>
+        <br />
+
+        <input list="browsers" id="pais" />
+        <datalist id="browsers">
+          <option value="Brasil"></option>
+          <option value="Portugal"></option>
+          <option value="Uruguai"></option>
+          <option value="China"></option>
+          <option value="Estados Unidos"></option>
+        </datalist>
+
+        <hr />
+        <h2>Outras informações</h2>
+        <label for="tipodecomida">Tipo de comida preferida</label>
+        <br />
+        Japonesa<input type="checkbox" id="tipodecomida" value="Japonesa" />
+        mexicana<input type="checkbox" id="tipodecomida" value="mexicana" />
+        chinesa<input type="checkbox" id="tipodecomida" value="chinesa" />
+        árabe<input type="checkbox" id="tipodecomida" value="arabe" />
+        brasileira<input type="checkbox" id="tipodecomida" value="brasileira" />
+        Italiana<input type="checkbox" id="tipodecomida" value="Italiana" />
+
+        <br />
+        <br />
+        <button type="submit">enviar</button>
+
+        <button type="reset">reset</button>
+      </form>
+    </div>
+  </body>
+</html>

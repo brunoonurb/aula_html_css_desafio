@@ -1,0 +1,22 @@
+principais TAGS
+
+.reset:hover {}
+button:hover {}
+a:link {}
+a:hover {}
+a:visited {}
+button:active {}
+
+// para mudar o css conforme o tamanho da minha tela
+@media screen and (max-width: 800px) {
+  .nomeMinhaClasse {
+    background-color: yellow;
+  }
+}
+
+LINKs
+https://www.w3schools.com/css/css3_mediaqueries.asp
+
+
+
+

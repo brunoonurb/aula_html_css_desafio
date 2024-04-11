@@ -1,0 +1,75 @@
+.divPrincipal {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 20px;
+}
+
+/* Estilo para o cabeçalho */
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.cabecalho a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos já existentes */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Novos estilos para a segunda lista de produtos */
+
+.listaProdutos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.listaProdutos h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.listaProdutos .produto {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.listaProdutos .produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.listaProdutos .produto h3 {
+  margin-top: 10px;
+}
+
+.segundaListaProdutos .produto p {
+  margin: 10px 0;
+}
+
+.segundaListaProdutos .produto span {
+  font-weight: bold;
+  color: #007bff;
+}

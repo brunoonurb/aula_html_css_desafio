@@ -1,0 +1,30 @@
+tabela {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+tr {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+td {
+  flex: 1;
+  padding: 10px;
+}
+
+td:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+td a {
+  color: blue;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}

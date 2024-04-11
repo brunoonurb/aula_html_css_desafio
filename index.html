@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <label>Aulas/Desafios</label>
+      <div>
+        <ul class="navbar">
+          <li><b>Facilitador:</b> Bruno Pedroso</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/bruno-da-silva-pedroso-a42691173/"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/brunoonurb"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Aulas/Desafios aplicado</h1>
+
+      <div class="turma">
+        <div class="card-turma">
+          <h2>Turma 13</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>Aula 1</h3>
+              <p>Estrutura de HTML e CSS</p>
+              <a href="turma-13/aula_2/grid/index.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/aula_1/anote.txt', 'turma-13/aula_1/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+            <div class="card">
+              <h3>Aula 2 - flex-box</h3>
+              <p>Utilizando Flex-box</p>
+              <a href="turma-13/aula_2/flex/index.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/aula_2/flex/anote.txt', 'turma-13/aula_2/flex/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Aula 2 - grid</h3>
+              <p>Utilizando Grid</p>
+              <a href="turma-13/aula_2/grid/index.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/aula_2/grid/anote.txt', 'turma-13/aula_2/grid/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Aula 3 - imagem e inputs</h3>
+              <p>Utilizando Grid</p>
+              <a href="turma-13/aula_3_com_css/contato.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/aula_3/anote.txt', 'turma-13/aula_3/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Aula 4 - media query e animação</h3>
+              <p>Utilizando media query</p>
+              <a href="turma-13/aula_4/produtos.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/aula_4/anote.txt', 'turma-13/aula_4/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="turma">
+        <div class="card-turma">
+          <h2>Desafios</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>Desafio - html e css</h3>
+              <p>Utilizando estrutura html e basico de css</p>
+              <a href="turma-13/desafio/desafio_1/pagina.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/desafio/desafio_1/anote.txt', 'turma-13/desafio/desafio_1/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Desafio 1 - flex-box</h3>
+              <p>Utilizando flex-box</p>
+              <a href="turma-13/desafio/desafio_2/pagina.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/desafio/desafio_2/anote.txt', 'turma-13/desafio/desafio_2/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+
+            <div class="card">
+              <h3>Desafio final</h3>
+              <p>Utilizando tudo relaizado a html e css</p>
+              <a href="turma-13/desafio/desafio_3/index.html" target="_blank"
+                >Visualizar exemplo sala</a
+              >
+              <button
+                onclick="abrirModal('turma-13/desafio/desafio_3/anote.txt', 'turma-13/desafio/desafio_3/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <h1>Principais TAGs</h1>
+          <table id="styles-table">
+            <thead>
+              <tr>
+                <th>Propriedade</th>
+                <th>Valor</th>
+                <th>Utilização</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Linhas da tabela serão adicionadas aqui -->
+            </tbody>
+          </table>
+          <div class="divObservacao">
+            <span>
+              OBERVAÇÃO/UTILIZAÇÃO
+              <button id="copyButton" onclick="copyPreContent()">Copiar</button>
+              <div class="tooltip" id="tooltip">Copiado!</div>
+            </span>
+            <div id="observacoes"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
