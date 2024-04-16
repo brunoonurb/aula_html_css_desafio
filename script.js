@@ -39,6 +39,7 @@ async function montarTags(fileTags) {
   const stylesArray = tags.split("\n");
 
   const tableBody = document.querySelector("#styles-table tbody");
+  tableBody.innerHTML = "";
 
   const addedProperties = {};
 
@@ -72,6 +73,7 @@ async function montarObs(fileTags) {
 
   const divObs = document.querySelector("#observacoes");
 
+  divObs.innerHTML = "";
 // Cria um elemento <pre> para manter a formatação
 const preElement = document.createElement("pre");
 
