@@ -1,0 +1,14 @@
+.minhaDiv{
+  height: 500px;
+  background-color: blueviolet !important;
+}
+
+.minhaDiv2{
+  padding: 5px;
+  height: 500px;
+  background-color: bisque !important;
+}
+
+.minharow{
+padding: 15px;
+}
