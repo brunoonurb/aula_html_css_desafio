@@ -1,0 +1,63 @@
+
+.main{
+  width: 500px;
+  background-color: black;
+  height: 80vh;
+}
+
+.minha-classe {
+
+  display: none;
+  width: 80vw;
+  height: 200px;
+  color: yellow;
+  background-color: blue;
+}
+
+
+.divmain{
+  height: 800px;
+  border  : 1px solid black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.divcolor{
+  border: 1px solid red;
+  height: 100px;
+  width: 200px;
+}
+
+.divtamanho1{
+  
+}
+.divtamanho2{}
+.divtamanho3{}
+.divtamanho4{}
+
+
+
+
+.divflex{
+  margin: 100px;
+  width: 650px;
+  height: 650px;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.caixinha{
+
+  background-color: green;
+  width: 200px;
+  height: 200px;
+
+}
