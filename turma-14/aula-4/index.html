@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aula 4</title>
+
+    <link rel="stylesheet" href="meucss.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      
+
+
+      <form action="form.html" method="get">
+
+
+        <br />
+        <label for="idade">SEXO</label>
+        <br />
+        <label for="Masculino">Masculino</label>
+        <input type="radio" name="sexo" value="masculino"  id="Masculino" /> 
+        <label for="Feminino">Feminino</label>
+        <input type="radio" name="sexo" value="Feminino" id="Feminino" />
+        <label for="Feminino">outros</label>
+        <input type="radio" name="sexo" value="outros" id="outros" required />
+        <br />
+
+        <br>
+        <br>
+        <br>
+        <input type="date" name="data" id="data"   > <br>
+        <input  type="text" maxlength="5" name="email" id="email" placeholder="digite seu email"  > <br>
+
+        <input type="color" name="" id=""> <br>
+        <input autofocus type="number" name="" id="" placeholder="digite um numer" value="200"> <br>
+        <input type="file" name="" id=""> <br>
+
+
+        <input list="minhaLista" name="datalista">
+        <datalist id="minhaLista">
+          <option value="item 1"> prudutos items 1</option>
+          <option value="item 2"> prudutos items 2</option>
+          <option value="item 3"> prudutos items3</option>
+          <option value="item 4"> prudutos items 4</option>
+          </datalist><br><br>
+
+
+
+
+          <select name="uf" id="uf">
+            <option value="">Selecione</option>
+            <option value="PR">Parana</option>
+            <option value="SC">Santa catarina</option>
+            <option value="RS">Rio Grande</option>
+            <option value="AC">Acre</option>
+            <option value="PA">Para</option>
+
+          
+          </select>
+
+
+
+
+
+
+
+        <button type="submit">enviar</button>
+      </form>
+
+    </div>
+  </body>
+</html>

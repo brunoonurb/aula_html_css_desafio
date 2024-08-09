@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciar Múltiplas Modais</title>
+  <style>
+    /* Estilos para a modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 60px;
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      text-align: center;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    /* Estilos para o tooltip e a mensagem de confirmação */
+    #tooltip, #confirmationMessage {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Modais -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal-id="modal1">&times;</span>
+      <p id="modalText1">Conteúdo da Modal 1</p>
+      <button id="copyModal1">Copiar Texto</button>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" data-modal-id="modal2">&times;</span>
+      <p id="modalText2">Conteúdo da Modal 2</p>
+      <button id="copyModal2">Copiar Texto</button>
+    </div>
+  </div>
+
+  <!-- Tooltip e Mensagem de Confirmação -->
+  <div id="tooltip">Texto copiado!</div>
+  <div id="confirmationMessage">Texto copiado com sucesso! Se a aba não fechar automaticamente, você pode fechá-la manualmente.</div>
+
+  <script>
+    // Função para copiar o texto da modal e tentar fechar a aba
+    async function copyModalTextAndClose(modalId) {
+      try {
+        const modal = document.getElementById(modalId);
+        const text = modal.querySelector('p').innerText;
+        await navigator.clipboard.writeText(text);
+        showTooltip();
+        showConfirmationMessage();
+        console.log("Texto da " + modalId + " copiado para a área de transferência.");
+        // Tentativa de fechar a aba
+        window.setTimeout(() => {
+          window.close();
+        }, 100); // Adiciona um pequeno atraso antes de tentar fechar a aba
+      } catch (err) {
+        console.error("Erro ao tentar copiar o texto da modal:", err);
+      }
+    }
+
+    // Função para mostrar o tooltip
+    function showTooltip() {
+      const tooltip = document.getElementById("tooltip");
+      tooltip.style.display = "block";
+      setTimeout(() => {
+        tooltip.style.display = "none";
+      }, 2000); // Oculta o tooltip após 2 segundos
+    }
+
+    // Função para mostrar a mensagem de confirmação
+    function showConfirmationMessage() {
+      const message = document.getElementById("confirmationMessage");
+      message.style.display = "block";
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 5000); // Oculta a mensagem após 5 segundos
+    }
+
+    // Abrir a modal com base no parâmetro da URL
+    function openModalFromUrl() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const modalId = urlParams.get('modal');
+      
+      if (modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = "block";
+        }
+      }
+    }
+
+    // Fechar modais ao clicar no botão de fechar ou fora da modal
+    document.querySelectorAll('.close').forEach(button => {
+      button.onclick = function() {
+        const modalId = this.getAttribute('data-modal-id');
+        document.getElementById(modalId).style.display = "none";
+      }
+    });
+
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    };
+
+    // Configurar os botões de copiar
+    document.getElementById("copyModal1").onclick = function() {
+      copyModalTextAndClose('modal1');
+    };
+
+    document.getElementById("copyModal2").onclick = function() {
+      copyModalTextAndClose('modal2');
+    };
+
+    // Abrir a modal certa com base na URL quando a página carrega
+    window.onload = openModalFromUrl;
+  </script>
+</body>
+</html>

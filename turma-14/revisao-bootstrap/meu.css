@@ -1,0 +1,44 @@
+.icone {
+  background-color: green;
+  height: 10vh;
+  width: 10vw;
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 90vw;
+}
+.minhapagina{
+  padding: 40px;
+}
+.center{
+  text-align: center;
+}
+
+.topo{
+  height: 150px;
+}
+
+.nav{
+  height: 100px;
+}
+.meio{
+  height: 300px;
+  border: solid 1px;
+}
+
+
+
+
+.navbar{
+  background-color: red;
+  height: 10vh;
+}
+
+.conteudo{
+  height: 80vh;
+  overflow: auto;
+}
+
+.rodape{
+  background-color: blue;
+  height: 10vh;
+}

@@ -1,0 +1,29 @@
+
+
+.corfundo1{
+  background-color: red;
+}
+
+.minhacaixa{
+  background-color: blueviolet;
+  width: 500px;
+  height: 500px;
+}
+
+table{
+  border: solid 1px red;
+}
+
+td{
+  border: solid 1px black;
+}
+
+thead{
+  background-color: bisque;
+}
+.main{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
