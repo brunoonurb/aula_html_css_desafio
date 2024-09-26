@@ -1,0 +1,32 @@
+body{
+  background-color: blue;
+}
+.home{
+  color: yellow;
+}
+.produto{
+  color:aliceblue;
+}
+.div1{
+  background-color: #000;
+}
+.div2{
+  background-color: red;
+  height: 60vh;
+  width: 70%;
+  margin: 15%;
+}
+
+.div3{
+  background-color: rebeccapurple;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* anotação */
+.teste{
+  border: solid 2px black;
+  border-radius: 8%;
+  width: 80%;
+  height: 50px;
+}

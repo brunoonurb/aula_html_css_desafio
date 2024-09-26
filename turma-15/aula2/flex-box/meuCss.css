@@ -1,0 +1,31 @@
+
+body{
+  background-color: blue;
+}
+
+.divPrincipal {
+  background-color: orange;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.caixinha {
+  background-color: green;
+  border: solid 1px;
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.caixinhaMenor {
+  background-color: chocolate;
+  border-radius: 25%;
+  width: 30%;
+  text-align: center;  
+}
+

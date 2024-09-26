@@ -1,0 +1,33 @@
+
+.corBack{
+  background-color: black;
+  color: white;
+  /* border: solid 1px; */
+}
+
+.divPrincipal{
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px 100px; 
+  gap: 5px;
+}
+
+.caixinhaA{
+  grid-row: 3;
+  grid-column: 2/4;
+}
+
+.caixinhaB{
+  grid-row: 5;
+  grid-column: 5;
+}
+
+.caixinhaC{
+  grid-row: 1/4;
+  grid-column: 4;
+}
+.caixinhaD{
+  grid-row: 1;
+  grid-column: 2;
+}
