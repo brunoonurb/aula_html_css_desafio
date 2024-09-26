@@ -3,6 +3,8 @@
   background-color: black;
   color: white;
   /* border: solid 1px; */
+  border-radius: 8px;
+  text-align: center;
 }
 
 .divPrincipal{

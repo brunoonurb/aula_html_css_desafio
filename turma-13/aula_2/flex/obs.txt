@@ -25,3 +25,9 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: space-between;
 
+
+/* centralizando  */
+justify-content: center;
+justify-content: space-evenly;
+justify-content: space-around;
+justify-content: space-between; 
