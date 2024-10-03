@@ -1,0 +1,42 @@
+
+p{
+  margin: 100px;
+}
+h1{
+  color: red ;
+  font-size: 30px;
+  text-shadow: 2px 2px;
+  text-transform: uppercase;
+  text-indent: 50px;
+  text-decoration-line: underline;
+}
+
+.minhaClasse{
+  background-color: aqua;
+  color: yellow;
+  font-size: 24px;
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+}
+
+
+
+.caixinhaRoxo{
+  background-color: blueviolet;
+  margin-top: 52px;
+  height: 100px;
+  width: 85vw;
+}
+
+.caixinhaAzul{
+  background-color: blue;
+  height: 120px;
+  width: 85vw;
+}
+ .caixinhaPreto{
+  background-color: black;
+  color: white;
+  height: 90px;
+  width: 85vw;
+ }

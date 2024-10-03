@@ -1,0 +1,30 @@
+input {
+  margin-top: 5px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: beige;
+}
+
+select {
+  margin-top: 5px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: beige;
+}
+option{
+  background-color: aqua;
+}
+
+
+
+.groupInput{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.groupInput label{
+  color: blue;
+}

@@ -1,3 +1,11 @@
 Config de IDE
 
 como usar no html
+slide de border deveria ser somente o basico sem um monte de tags
+sobre posiçoes falar antes d flex box (mais facil)
+parte de redimencionamento de div trazer para aula 1
+
+cores efontes trazer antes de flex box
+
+
+slide 141 pedido um conteudo de table

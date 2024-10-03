@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>pagina do bruno</title>
+
+    <!-- chama CSSA -->
+
+    <link rel="stylesheet" href="meuCss.css" />
+  </head>
+
+  <body>
+   
+   <input type="text" name="meuInput" id="meuInput">
+
+   <button type="button" onclick="pegarValor()">
+    enviar
+   </button>
+  </body>
+
+  <script>
+
+    function pegarValor() {
+      const valor =   document.getElementById('meuInput').value
+      
+      alert(valor)
+    }
+  </script>
+</html>

@@ -1,0 +1,70 @@
+table {
+  background-color: black;
+  color: aqua;
+}
+th {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+td,
+tr {
+  border: solid 0.5px white;
+}
+
+.minhaTable {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.teste h1 {
+  color: red;
+}
+
+a {
+  background-color: rgb(207, 50, 50);
+  color: white;
+}
+a:hover {
+  background-color: blue;
+}
+a:active {
+  background-color: rosybrown;
+}
+
+.meuLink {
+  background-color: black;
+  color: aqua;
+}
+.meuLink:hover {
+  background-color: chartreuse;
+}
+.meuLink:active {
+  background-color: burlywood;
+}
+
+
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  background-color: green;
+  color: aliceblue;
+}
+
+.divHover{
+  background-color: blue;
+  width: 100px;
+  
+}
+.divHover:hover{
+  background-color: brown;
+  width: 400px;
+  transition-property: width;
+  transition-duration: 1.5s;
+  transition-timing-function: linear;
+  transition-delay: 0,4s;
+}
