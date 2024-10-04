@@ -13,6 +13,10 @@ tr {
   border: solid 0.5px white;
 }
 
+/* tbody{
+  background-color: rgb(84, 78, 78);
+} */
+
 .minhaTable {
   background-color: blanchedalmond;
   color: black;
