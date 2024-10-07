@@ -1,0 +1,27 @@
+
+
+a:link{
+  color: brown;
+}
+
+a:hover{
+  color: aquamarine;
+}
+
+
+a:visited{
+  color: chartreuse;
+}
+
+#meuId{
+  background-color: blue;
+}
+
+.minhaClass{
+  background-color: gray;
+}
+
+p{
+  background-color: red !important;
+}
+
