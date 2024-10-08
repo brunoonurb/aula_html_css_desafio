@@ -1,0 +1,16 @@
+
+.minhaClasse{
+  background-color: rosybrown;
+  width: 500px;
+}
+
+.minhaClasse2{
+  background-color: rosybrown;
+  width: 80vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.bg-success{
+  background-color: brown !important;
+}
