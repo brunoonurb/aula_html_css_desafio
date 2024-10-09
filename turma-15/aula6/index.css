@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+.row1 {
+}
+
+.col1 {
+  /* height: 350px; */
+
+  background-color: red;
+}
+.linhaazul {
+  border: solid 3px black;
+  background-color: blue;
+  height: 150px;
+  font-size: 100px;
+  text-align: center;
+}
+
+.caixa2 {
+  opacity: 0.6;
+  background-image: url("https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?w=1060&t=st=1728514971~exp=1728515571~hmac=02e948b5d909e1ead2ed38837f8140affaeca5e392264c34bfbc0d47c88ba3fd");
+}
+
+.imagem {
+  /* height: 350px; */
+}
