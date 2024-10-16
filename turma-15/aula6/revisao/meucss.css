@@ -1,0 +1,26 @@
+
+h1{
+  color: blue;
+}
+
+.linha1{
+  background-color: brown;
+  color: white;
+  height: 200px;
+}
+
+.coluna1{
+  background-color: black;
+}
+
+
+.minhaCorVerde{
+background-color: green;
+/* height: 50px; */
+}
+
+.minhaCorAzul{
+  background-color: blue;
+  /* height: 500px; */
+  border: solid 1px ;
+  }
