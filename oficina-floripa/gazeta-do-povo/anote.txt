@@ -21,18 +21,16 @@ position: fixed;
 
 
 ---HTML
-html
-head
-title
-style
-body
-header
-div
-h1
-h2
-h3
-p
-a
-button
-img
-span
+html: Para iniciar codigo HTML
+head: Configuração HTML
+title: Titulo da pagina 
+body: Adicionar conteúdo da pagina
+div: Separar os conteúdo(caixas)
+h1: Titulo na pagina
+h2: Titulo na pagina
+h3: Titulo na pagina
+p: Fazer um parágrafo
+a: Link para fazer redirecionamento
+button: criar Botões
+img: Adicionar imagem
+span: 
