@@ -1,0 +1,87 @@
+
+<!-- 
+1. **`<html>`**: Define o documento HTML.
+2. **`<head>`**: Contém metadados sobre o documento, como o título e links para estilos.
+3. **`<title>`**: Define o título do documento que aparece na aba do navegador.
+4. **`<style>`**: Contém o CSS para estilizar o documento.
+5. **`<body>`**: Contém o conteúdo visível da página web.
+6. **`<header>`**: Representa o cabeçalho da página ou de uma seção.
+7. **`<div>`**: Um contêiner genérico para agrupar e estilizar elementos.
+8. **`<h1>`**: Define um título de nível 1.
+9. **`<h2>`**: Define um título de nível 2.
+10. **`<h3>`**: Define um título de nível 3.
+11. **`<p>`**: Define um parágrafo.
+12. **`<a>`**: Define um hyperlink.
+13. **`<button>`**: Define um botão clicável.
+14. **`<img>`**: Define uma imagem.
+15. **`<span>`**: Um contêiner genérico inline para estilizar partes de texto.
+
+Essas tags são usadas para estruturar e estilizar o conteúdo da página web, criando uma interface que se assemelha à imagem fornecida.
+
+
+--- CSS
+1. **`font-family`**: Define a família de fontes para o texto.
+2. **`background-color`**: Define a cor de fundo de um elemento.
+3. **`color`**: Define a cor do texto.
+4. **`margin`**: Define o espaço ao redor de um elemento.
+5. **`padding`**: Define o espaço interno de um elemento.
+6. **`border`**: Define a borda de um elemento.
+7. **`width`**: Define a largura de um elemento.
+8. **`max-width`**: Define a largura máxima de um elemento.
+9. **`height`**: Define a altura de um elemento.
+10. **`object-fit`**: Define como o conteúdo de um elemento substituível deve ser redimensionado para se ajustar ao seu contêiner.
+11. **`display`**: Define o tipo de caixa de renderização de um elemento.
+12. **`flex`**: Define um contêiner flexível.
+13. **`justify-content`**: Alinha os itens ao longo do eixo principal de um contêiner flexível.
+14. **`align-items`**: Alinha os itens ao longo do eixo transversal de um contêiner flexível.
+15. **`grid-template-columns`**: Define a estrutura de colunas de um contêiner de grade.
+16. **`gap`**: Define o espaço entre os itens de um contêiner de grade ou flexível.
+17. **`font-size`**: Define o tamanho da fonte.
+18. **`font-weight`**: Define a espessura da fonte.
+19. **`text-decoration`**: Define a decoração do texto (como sublinhado).
+20. **`position`**: Define o método de posicionamento de um elemento.
+21. **`bottom`**: Define a posição inferior de um elemento posicionado.
+22. **`right`**: Define a posição direita de um elemento posicionado.
+23. **`transform`**: Aplica uma transformação 2D ou 3D a um elemento.
+24. **`border-radius`**: Define o raio das bordas de um elemento.
+25. **`cursor`**: Define o tipo de cursor a ser exibido quando o ponteiro do mouse está sobre um elemento.
+
+  background-color: red;
+  width: 100%;
+  width: 100vw;
+  width: 100px;
+  height: 30vh;
+  height: 300px;
+  padding-left: 100px;
+  margin-top: 50px;
+  margin-left: 30px;
+  background-color: red;
+  width: 70%;
+  height: 80%;
+  height: 100vh;
+  color: yellow;
+  font-size: 30px;
+
+
+-->
+
+<!-- HTML -->
+<html>
+  <head>
+    <title>Minha Pagina</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>meu titulo</h1>
+      <p>
+       texto
+      </p>
+    </div>
+
+    <h1>Lista</h1>
+    <ul>
+      <li>item 1</li>
+    </ul>
+  </body>
+</html>

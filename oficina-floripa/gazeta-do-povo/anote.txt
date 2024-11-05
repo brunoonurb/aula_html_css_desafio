@@ -1,0 +1,38 @@
+
+
+background-color: red;
+width: 100%;
+width: 100vw;
+width: 100px;
+height: 30vh;
+height: 300px;
+padding-left: 100px;
+margin-top: 50px;
+margin-left: 30px;
+background-color: red;
+width: 70%;
+height: 80%;
+height: 100vh;
+color: yellow;
+font-size: 30px;
+font-family: Arial, sans-serif;
+border-bottom: 1px solid #ccc;
+position: fixed;
+
+
+---HTML
+html
+head
+title
+style
+body
+header
+div
+h1
+h2
+h3
+p
+a
+button
+img
+span

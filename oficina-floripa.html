@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header style="color: white;">
+      <label>Aulas/Desafios</label>
+      <div>
+        <ul class="navbar">
+          <li><b>Facilitador:</b> Bruno Pedroso</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/bruno-da-silva-pedroso-a42691173/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/brunoonurb" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Aulas/Desafios aplicado</h1>
+
+      <div class="turma">
+        <div class="card-turma">
+          <h2>Oficinas</h2>
+          <div class="card-container">
+            <div class="card">
+              <h3>Site de notícia</h3>
+              <p>Criando uma pagina de notícia, igual a pagina Gazeta do Povo</p>
+              <a href="oficina-floripa/gazeta-do-povo/home.html" target="_blank"
+                >Visualizar ex aula</a
+              >
+              <button
+                onclick="abrirModal('oficina-floripa/gazeta-do-povo/anote.txt', 'oficina-floripa/gazeta-do-povo/obs.txt')"
+              >
+                Principais TAGs
+              </button>
+              <a
+                href="https://github.com/brunoonurb/aula_html_css_desafio/tree/main/oficina-floripa/gazeta-do-povo"
+                target="_blank"
+                >Git</a
+              >
+              <a
+                href="https://drive.google.com/drive/folders/1qvWWSJpTNgLrgaOrykZTs9q6Qj99YlDn?usp=drive_link"
+                target="_blank"
+                >Drive</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <h1>Principais TAGs</h1>
+          <table id="styles-table">
+            <thead>
+              <tr>
+                <th>Propriedade</th>
+                <th>Valor</th>
+                <th>Observação/Utilização</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Linhas da tabela serão adicionadas aqui -->
+            </tbody>
+          </table>
+          <div class="divObservacao">
+            <span>
+              OBERVAÇÃO/UTILIZAÇÃO
+              <button id="copyButton" onclick="copyPreContent()">Copiar</button>
+              <div class="tooltip" id="tooltip">Copiado!</div>
+            </span>
+            <div id="observacoes"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
