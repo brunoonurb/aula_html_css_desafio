@@ -1,0 +1,50 @@
+
+.titulo-red{
+  background-color: red;
+}
+
+
+.caixinha{
+  background-color: yellow;
+  /* width: 500px; */
+  /* width: 50%; */
+  width: 50vw;
+  height: 500px;
+  /* height: 50vh; */
+  font-size: 30px;
+  color: rgb(10, 173, 24);
+  
+}
+
+
+.cabecalho{
+  background-color: blue;
+  height: 150px;
+}
+.corpo{
+  background-color:yellow;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.rodape{
+  background-color:red;
+  height: 100px;
+}
+
+
+
+
+
+.caixa1{
+  background-color: bisque;
+  height: 200px;
+  width: 15%;
+}
+
+.caixa2{
+  background-color: aquamarine;
+  height: 200px;
+  width: 15%;
+}
