@@ -1,0 +1,43 @@
+
+.principal{
+  padding: 5px;
+  background-color: #c3bbbb;
+ 
+
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+
+}
+
+.a{
+  background-color: black;
+  color: #fff;
+
+  grid-column: 1;
+  grid-row: 3 / 5;
+}
+
+.b{
+  background-color: black;
+  color: #fff;
+  grid-column: 3;
+  grid-row: 3;
+}
+.c{
+  background-color: black;
+  color: #fff;
+}
+
+.d{
+  background-color: black;
+  color: #fff;
+}
+
+.texto{
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+}

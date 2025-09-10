@@ -1,0 +1,29 @@
+
+
+.principal{
+  background-color: lightblue;
+
+  height: 400px;
+  width: 800px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+
+.caixa1{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+
+.caixa2{
+  
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}

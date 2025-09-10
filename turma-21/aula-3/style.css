@@ -1,0 +1,40 @@
+a {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+
+.header {
+  height: 100px;
+  background-color: rgb(186, 186, 228);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.listadeprodutos {
+  background-color: lawngreen;
+  /* height: 300px; */
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+ 
+  flex-wrap: wrap;
+}
+
+.caixagenerico {
+  background-color: brown;
+  height: 400px;
+  width: 25%;
+  border-radius: 5px;
+  padding-left: 2.5%;
+  margin-top: 30px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; */
+}

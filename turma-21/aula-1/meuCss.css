@@ -1,0 +1,56 @@
+.card-produto {
+  border: 3px dashed black;
+
+  /* width: 300px;   */
+  /* width: 80vw; */
+  width: 40%;  
+  height: 150px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  background-color: lightgreen;
+}
+
+.IDENTEIFICADOR {
+  /* estilos */
+}
+
+/* .card-produto {
+ border: 3px dashed black;
+
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  background-color: lightgreen;
+} */
+
+h1 {
+  color: blue;
+}
+
+p {
+  font-size: 20px;
+  color: blue;
+}
+
+.minha-classe {
+  color: red;
+}
+
+#meu-id {
+  color: green;
+}
+
+.div-classe {
+  background-color: yellow;
+}
+
+.produtos {
+  background-color: lightskyblue;
+  padding: 20px;
+  width: 500px;
+}

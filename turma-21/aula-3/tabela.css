@@ -1,0 +1,13 @@
+/* 
+.tbodyTabela{
+  background-color: blueviolet;
+} */
+
+tbody{
+  background-color: black;
+  color: aqua;
+}
+thead{
+    background-color: red;
+  color: blue;
+}
