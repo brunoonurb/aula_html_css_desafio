@@ -1,0 +1,339 @@
+<html>
+  <head>
+    <title>pagina do bruno</title>
+
+    <!-- chama CSSA -->
+
+    <link rel="stylesheet" href="meuCss.css" />
+  </head>
+
+  <style>
+    .formTeste {
+      background-color: lightgreen;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .formTeste input {
+      width: 200px;
+      background-color: lightcoral;
+     
+    }
+
+    .formTeste select {
+      background-color: lightyellow;
+      width: 150px;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+
+    .formTeste .inputTeste {
+      background-color: lightblue;
+       height: 30px;
+      border-radius: 5px;
+      border: 1px solid gray;
+
+    }
+  </style>
+
+  <body>
+    <h1>form</h1>
+    <form class="">
+
+
+
+      <h1> Comida</h1>
+      <div>
+        <label for="japonesa"> japonesa</label>
+        <input type="checkbox" name="japonesa" id="japonesa" />
+
+        <label for="chinesa"> chinesa</label>
+        <input type="checkbox" name="chinesa" id="chinesa" />
+      
+        <label for="italiana"> italiana</label>
+        <input type="checkbox" name="italiana" id="italiana" />
+
+      </div>
+
+<div>
+      <label for="sexo">masculino</label>
+      <input type="radio" name="sexo" id="">
+      <label for="sexo">feminino</label>
+      <input type="radio" name="sexo" id="">
+      <label for="sexo">outros</label>
+      <input type="radio" name="sexo" id="">
+      
+</div>
+
+      <label>select</label>
+
+      <select  name="uf" id="uf">
+        <option value="">selecione</option>
+        <option value="PR">Parana</option>
+        <option value="SC">santa catarina</option>
+        <option value="BA">Bahia</option>
+        <option value="RJ">Rio de janeiro</option>
+
+
+      </select>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+          <hr />
+    <h1> data list </h1>
+
+    <input list="minhaLista2" />
+
+    <datalist id="minhaLista2">
+      <option value="item 1">produto item 1</option>
+      <option value="item 2">produto item 2</option>
+      <option value="item 3">produto item 3</option>
+      <option value="item 4">produto item 4</option>
+    <hr />
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <label for="nome">nome</label>
+      <input type="text" id="nome" name="nome" class="inputTeste"  placeholder="digite o nome"/>
+
+      <input type="password" name="senha" id="senha" />
+
+      <input type="color" name="cor" id="cor" />
+      <input type="date" name="data" id="data" />
+      <input type="time" name="time" id="time" />
+
+      <input type="range" name="" id="" />
+      <input type="text" name="invisivel" value="valor invisivel" />
+
+      <input type="email" name="email" id="" />
+      <input type="text" name="teste" id="" max="3" min="2" required />
+
+      <button type="submit">enviar</button>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form style="background-color: blue;">
+      <label for="nome">NOME</label>
+      <input class="inputTeste" type="text" name="nome" id="nome" /><br />
+
+      <label for="sexo">masculino</label>
+      <input type="radio" name="sexo" id="sexo" /><br />
+      <input type="checkbox" name="comida" id="comida" /><br />
+
+      <input type="number" name="idade" id="idade" /><br />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="digite sua senha"
+        required
+        maxlength="5"
+        autofocus
+      /><br />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="digite seu email"
+        required
+        disabled
+      /><br />
+
+      <br />
+      <input
+        type="hidden"
+        name="campoivisivel"
+        id="campoivisivel"
+        placeholder="hideen"
+        value="MEU VALOR INVISIVEL"
+      />
+
+      <br />
+      <br />
+      <select name="uf" id="uf">
+        <option value="">selecione</option>
+        <option value="Parana">Parana</option>
+        <option value="SC">santa catarina</option>
+        <option value="BA">Bahia</option>
+        <option value="RJ">Rio de janeiro</option>
+      </select>
+
+      <textarea
+        name="resumo"
+        id="resumo"
+        rows="5"
+        cols="50"
+        placeholder="Faça um resumo"
+      ></textarea>
+
+      <br />
+      <br />
+      <input type="submit" value="Enviar" />
+      <button type="submit">Mandar</button>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h1>FORM parte 1</h1>
+
+    <div class="groupInput">
+      <label for="">LABEL</label>
+      <input type="email" name="" id="" placeholder="Digite seu email" />
+    </div>
+
+    <div class="groupInput">
+      <label for="">LABEL SELECT</label>
+      <select name="" id="">
+        <option>selecione seu estado</option>
+        <option value="teste">teste</option>
+      </select>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <form>
+      <label for="nome">NOME</label>
+
+      <input
+        type="url"
+        name="nome"
+        id="nome"
+        required
+        placeholder="digite aqui"
+      />
+
+      <br />
+      <label for="sobrenome">SOBRENOME</label>
+      <input type="text" name="sobrenome" id="sobrenome" autofocus />
+
+      <br />
+      <button type="reset">limpar</button>
+      <button type="submit">BTN enviar</button>
+      <input type="submit" value="ENVIE" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>FORM parte 2</h1>
+    <form>
+      <select name="uf" id="uf">
+        <option value="">Selecione</option>
+        <option value="PR">Parana</option>
+        <option value="SC">Santa catarina</option>
+        <option value="RS">Rio Grande</option>
+        <option value="AC">Acre</option>
+        <option value="PA">Para</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <textarea
+        name="textarea"
+        id="textarea"
+        placeholder="digite seu texto"
+        rows="10"
+        cols="50"
+      >
+      </textarea>
+
+      <br />
+      <br />
+      <br />
+      <label for="sexo">SEXO</label>
+      <br />
+      <label for="Masculino">Masculino</label>
+      <input type="radio" name="sexo" value="masculino" id="Masculino" />
+      <label for="Feminino">Feminino</label>
+      <input type="radio" name="sexo" value="Feminino" id="Feminino" />
+      <label for="Feminino">outros</label>
+      <input type="radio" name="sexo" value="outros" id="outros" required />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <input type="date" name="data" id="data" /> <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="digite seu email"
+      />
+      <br />
+      <input
+        type="text"
+        name="text"
+        id="text"
+        placeholder="digite um texto"
+        required
+      />
+      <br />
+
+      <input type="color" name="" id="" /> <br />
+      <input
+        autofocus
+        type="number"
+        name=""
+        id=""
+        placeholder="digite um numer"
+        value="200"
+      />
+      <br />
+      <input type="file" name="" id="" /> <br />
+
+      <input list="minhaLista" name="datalista" />
+      <datalist id="minhaLista">
+        <option value="item 1">prudutos items 1</option>
+        <option value="item 2">prudutos items 2</option>
+        <option value="item 3">prudutos items3</option>
+        <option value="item 4">prudutos items 4</option></datalist
+      ><br /><br />
+
+      <select name="uf" id="uf">
+        <option value="">Selecione</option>
+        <option value="PR">Parana</option>
+        <option value="SC">Santa catarina</option>
+        <option value="RS">Rio Grande</option>
+        <option value="AC">Acre</option>
+        <option value="PA">Para</option>
+      </select>
+
+      <button type="submit">enviar</button>
+    </form>
+  </body>
+</html>
