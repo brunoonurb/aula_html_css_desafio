@@ -1,0 +1,52 @@
+.linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  /* height: 100vh; */
+}
+
+.coluna {
+  background-color: gray;
+  width: 33.3%;
+  height: 300px;
+}
+
+.preto {
+  background-color: black;
+  color: white;
+}
+
+.linha2{
+  width: 100vw;
+  height: 100vh;
+  background-color: lightseagreen;
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .coluna {
+    background-color: green;
+    width: 50%;
+  }
+
+  
+}
+
+@media screen and (max-width: 500px) {
+  
+  .coluna {
+    background-color: red;
+    width: 100%;
+  }
+
+  .linha2{
+    display: block;
+  }
+  
+  .linha{
+    display: none;
+  }
+}
