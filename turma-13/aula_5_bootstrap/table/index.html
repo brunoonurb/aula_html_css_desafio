@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Produtos</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 40px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+      }
+      .tabela-bonita {
+        border-collapse: collapse;
+        margin: 0 auto;
+        min-width: 700px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .tabela-bonita th, .tabela-bonita td {
+        padding: 16px 20px;
+        text-align: left;
+      }
+      .tabela-bonita thead {
+        background: #1976d2;
+        color: #fff;
+      }
+      .tabela-bonita tbody tr:nth-child(even) {
+        background: #f0f4fa;
+      }
+      .tabela-bonita tbody tr:hover {
+        background: #e3f2fd;
+        transition: background 0.2s;
+      }
+      .tabela-bonita tfoot th {
+        background: #1976d2;
+        color: #fff;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+       <a aria-current="page" href="../index.html">Home</a>
+    </h2>
+    <h1>Lista de Produtos</h1>
+    <table class="tabela-bonita">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome do Produto</th>
+          <th>Categoria</th>
+          <th>Preço</th>
+          <th>Quantidade em Estoque</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Notebook Dell Inspiron</td>
+          <td>Informática</td>
+          <td>R$ 3.500,00</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Smartphone Samsung Galaxy S21</td>
+          <td>Celulares</td>
+          <td>R$ 2.800,00</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fone de Ouvido JBL</td>
+          <td>Áudio</td>
+          <td>R$ 350,00</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Monitor LG 24"</td>
+          <td>Informática</td>
+          <td>R$ 900,00</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Teclado Mecânico Redragon</td>
+          <td>Periféricos</td>
+          <td>R$ 250,00</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="5">Lista completa de produtos</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

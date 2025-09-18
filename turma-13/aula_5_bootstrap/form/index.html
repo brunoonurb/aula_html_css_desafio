@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Produto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .form-container {
+            padding: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="search"],
+        input[type="date"],
+        input[type="time"],
+        input[type="datetime-local"],
+        input[type="month"],
+        input[type="week"],
+        input[type="color"],
+        input[type="range"],
+        input[type="file"],
+        select,
+        textarea {
+            padding: 12px 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        input[type="range"] {
+            padding: 0;
+            background: transparent;
+        }
+
+        input[type="color"] {
+            width: 100%;
+            height: 50px;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        input[type="file"]:hover {
+            background: #e8f0fe;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-item,
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #667eea;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .range-value {
+            text-align: center;
+            font-weight: 600;
+            color: #667eea;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 1024px) {
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+            
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+  <h2>
+       <a aria-current="page" href="../index.html">Home</a>
+    </h2>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Criar Novo Produto</h1>
+            <p>Preencha todos os campos para criar um produto completo</p>
+        </div>
+
+        <div class="form-container">
+            <form id="productForm">
+                <h2 class="section-title">📋 Informações Básicas</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="productName">Nome do Produto *</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productCode">Código do Produto</label>
+                        <input type="text" id="productCode" name="productCode">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email do Fornecedor</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Website do Produto</label>
+                        <input type="url" id="website" name="website" placeholder="https://exemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone de Contato</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="search">Buscar Categoria</label>
+                        <input type="search" id="search" name="search" placeholder="Digite para buscar...">
+                    </div>
+                </div>
+
+                <h2 class="section-title">💰 Preços e Quantidades</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="price">Preço (R$) *</label>
+                        <input type="number" id="price" name="price" step="0.01" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantidade em Estoque</label>
+                        <input type="number" id="quantity" name="quantity" min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="discount">Desconto (%)</label>
+                        <input type="range" id="discount" name="discount" min="0" max="100" value="0">
+                        <div class="range-value" id="discountValue">0%</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">Peso (kg)</label>
+                        <input type="number" id="weight" name="weight" step="0.1" min="0">
+                    </div>
+                </div>
+
+                <h2 class="section-title">📅 Datas e Horários</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="launchDate">Data de Lançamento</label>
+                        <input type="date" id="launchDate" name="launchDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="expiryDate">Data de Vencimento</label>
+                        <input type="date" id="expiryDate" name="expiryDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availableTime">Horário Disponível</label>
+                        <input type="time" id="availableTime" name="availableTime">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="datetimeLocal">Data e Hora Local</label>
+                        <input type="datetime-local" id="datetimeLocal" name="datetimeLocal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="month">Mês de Produção</label>
+                        <input type="month" id="month" name="month">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="week">Semana do Ano</label>
+                        <input type="week" id="week" name="week">
+                    </div>
+                </div>
+
+                <h2 class="section-title">🎨 Personalização</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="productColor">Cor do Produto</label>
+                        <input type="color" id="productColor" name="productColor" value="#667eea">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Categoria do Produto</label>
+                        <select id="category" name="category" required>
+                            <option value="">Selecione uma categoria</option>
+                            <option value="eletronicos">Eletrônicos</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="casa">Casa e Decoração</option>
+                            <option value="esportes">Esportes</option>
+                            <option value="livros">Livros</option>
+                            <option value="beleza">Beleza e Saúde</option>
+                            <option value="automotivo">Automotivo</option>
+                            <option value="alimentacao">Alimentação</option>
+                            <option value="brinquedos">Brinquedos</option>
+                            <option value="jardinagem">Jardinagem</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Status do Produto</label>
+                        <select id="status" name="status" required>
+                            <option value="">Selecione o status</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                            <option value="rascunho">Rascunho</option>
+                            <option value="pendente">Pendente</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2 class="section-title">✅ Opções e Configurações</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Características do Produto:</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="novo" name="caracteristicas" value="novo">
+                                <label for="novo">Produto Novo</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="promocao" name="caracteristicas" value="promocao">
+                                <label for="promocao">Em Promoção</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="freteGratis" name="caracteristicas" value="frete-gratis">
+                                <label for="freteGratis">Frete Grátis</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="garantia" name="caracteristicas" value="garantia">
+                                <label for="garantia">Com Garantia</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="ecoFriendly" name="caracteristicas" value="eco-friendly">
+                                <label for="ecoFriendly">Eco-Friendly</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Prioridade de Venda:</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="alta" name="prioridade" value="alta">
+                                <label for="alta">Alta Prioridade</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="media" name="prioridade" value="media">
+                                <label for="media">Média Prioridade</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="baixa" name="prioridade" value="baixa">
+                                <label for="baixa">Baixa Prioridade</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">📁 Arquivos e Documentos</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="productImage">Imagem do Produto</label>
+                        <input type="file" id="productImage" name="productImage" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="manual">Manual do Produto (PDF)</label>
+                        <input type="file" id="manual" name="manual" accept=".pdf">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certificate">Certificado de Qualidade</label>
+                        <input type="file" id="certificate" name="certificate" accept=".pdf,.doc,.docx">
+                    </div>
+                </div>
+
+                <h2 class="section-title">📝 Descrição Detalhada</h2>
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label for="description">Descrição do Produto</label>
+                        <textarea id="description" name="description" placeholder="Descreva detalhadamente o produto, suas características, benefícios e especificações técnicas..."></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="specifications">Especificações Técnicas</label>
+                        <textarea id="specifications" name="specifications" placeholder="Liste as especificações técnicas do produto..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Campo oculto para exemplo -->
+                <input type="hidden" id="productId" name="productId" value="PROD-001">
+
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">🚀 Criar Produto</button>
+                    <button type="reset" class="btn-secondary">🔄 Limpar Formulário</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Atualizar valor do range em tempo real
+        const discountRange = document.getElementById('discount');
+        const discountValue = document.getElementById('discountValue');
+
+        discountRange.addEventListener('input', function() {
+            discountValue.textContent = this.value + '%';
+        });
+
+        // Validação do formulário
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Coletar todos os dados do formulário
+            const formData = new FormData(this);
+            const productData = {};
+            
+            // Converter FormData para objeto
+            for (let [key, value] of formData.entries()) {
+                if (productData[key]) {
+                    // Se já existe, converter para array (checkboxes)
+                    if (Array.isArray(productData[key])) {
+                        productData[key].push(value);
+                    } else {
+                        productData[key] = [productData[key], value];
+                    }
+                } else {
+                    productData[key] = value;
+                }
+            }
+            
+            console.log('Dados do Produto:', productData);
+            alert('Produto criado com sucesso! Verifique o console para ver os dados.');
+        });
+
+        // Melhorar UX com animações
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
